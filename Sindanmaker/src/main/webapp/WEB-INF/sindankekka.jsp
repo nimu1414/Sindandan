@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>診断メーカー</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h1>やりたい診断を選択！</h1>
-<a href = "sindan.jsp">突然異世界に転移!?あなたがついた職業は一体？</a><br>
+
 </body>
 </html>

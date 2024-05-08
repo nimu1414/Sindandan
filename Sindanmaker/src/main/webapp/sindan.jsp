@@ -7,11 +7,10 @@
 <title>職業診断</title>
 </head>
 <body>
-<h1>あなたが異世界に飛ばされたときの職業は？</h1>
+<h1>突然異世界に転移!?あなたがついた職業は一体？</h1>
 <form action = "Sindan" method = "post">
 <label class ="ol">名前:<input type = "text" name = "name"></label><br>
-<label class ="ol">パスワード:<input type = "password" name = pass></label><br>
-<input type = "submit" value = "ログインして診断開始！">
+<input type = "submit" value = "診断開始！">
 </form>
 </body>
 </html>
