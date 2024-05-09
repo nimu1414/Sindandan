@@ -1,0 +1,29 @@
+@charset "UTF-8";
+html{
+font-family: meiryo;
+background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+text-align: center;
+}
+
+.textlink a {
+	position: relative;
+	color: #333;
+	text-decoration: none;
+}
+.textlink a:hover {
+	color: #b99b00;
+}
+.textlink02 a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #ceb849;
+	transition: width 0.3s;
+}
+
+.textlink02 a:hover::after {
+	width: 100%;
+}

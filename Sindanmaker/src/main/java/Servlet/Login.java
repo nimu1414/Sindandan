@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import model.LoginLogic;
-import model.Sindan;
 import model.User;
 
 /**
@@ -47,19 +46,23 @@ public class Login extends HttpServlet {
 		boolean isLogin = loginLogic.execute(user);
 		//ログイン成功
 		if (isLogin) {
-			Sindan sindan = new Sindan();
-			sindan.SindanJob();
-			String weapon = sindan.SindanWeapon();
-			user.setJob(sindan.getJob());
-			user.setJobId(sindan.getJobId());
-			user.setWeapon(weapon);
+//			Sindan sindan = new Sindan();
+//			String job = sindan.SindanJob();
+//			String weapon = sindan.SindanWeapon();
+//			String jobId = sindan.SindanJobId(job);
+//			System.out.println(job);
+//			System.out.println(jobId);
+//			System.out.println(weapon);
+//			user.setJob(job);
+//			user.setWeapon(weapon);
+//			user.setJobId(jobId);
 			HttpSession session = request.getSession();
 			session.setAttribute("loginUser", user);
 
 		}
 		//ログイン結果画面にフォワード
 		RequestDispatcher dis =
-				request.getRequestDispatcher("WEB-INF/jsp/sindankekka.jsp");
+				request.getRequestDispatcher("SindanServlet");
 		dis.forward(request, response);
 
 	}

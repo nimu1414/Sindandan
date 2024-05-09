@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>突然異世界に転移!?あなたがついた職業は一体？</h1>
-<form action = "Sindan" method = "post">
+<form action = "Login" method = "post">
 <label class ="ol">名前:<input type = "text" name = "name"></label><br>
 <input type = "submit" value = "診断開始！">
 </form>
