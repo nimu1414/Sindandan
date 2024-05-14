@@ -55,9 +55,6 @@ public class SindanServlet extends HttpServlet {
 		Sindan sindans = new Sindan(name , job , weapon ,zokusei);
 		PostSindanLogic psl = new PostSindanLogic();
 		psl.execute(sindans);
-		}else {
-			response.sendRedirect("sindan.jsp");
-		}
 		GetSindanListLogic gsll = new GetSindanListLogic();
 		List<Sindan> sinList = gsll.execute();
 		request.setAttribute("sindanList", sinList);
@@ -66,6 +63,9 @@ public class SindanServlet extends HttpServlet {
 				RequestDispatcher dis =
 						request.getRequestDispatcher("WEB-INF/jsp/sindankekka.jsp");
 				dis.forward(request, response);
+		}else {
+			response.sendRedirect("sindan.jsp");
+		}
 
 
 	}

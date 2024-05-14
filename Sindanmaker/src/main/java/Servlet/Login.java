@@ -59,6 +59,8 @@ public class Login extends HttpServlet {
 			HttpSession session = request.getSession();
 			session.setAttribute("loginUser", user);
 
+		} else {
+			response.sendRedirect("sindan.jsp");
 		}
 		//ログイン結果画面にフォワード
 		RequestDispatcher dis =

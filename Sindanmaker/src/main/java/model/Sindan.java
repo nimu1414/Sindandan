@@ -130,19 +130,4 @@ public class Sindan implements Serializable{
 		}
 //		return zokusei;
 	}
-//	public static String SindanJobId(String job) {
-//		String jobId = null;
-//		if(job.equals("勇者")) {
-//			jobId = "img/Sindan01,png";
-//		} else if (job.equals("戦士")) {
-//			jobId = "img/Sindan02.png";
-//		}else if (job.equals("魔導士")){
-//			jobId = "img/Sindan03.png";
-//		} else if (job.equals("ナイト")) {
-//			jobId = "img/Sindan04.png";
-//		} else if(job.equals("魔王")) {
-//			jobId = "img/Sindan05.png";
-//		}
-//		return jobId;
-//	}
 }
